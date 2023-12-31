@@ -37,6 +37,7 @@ func (note Note) Save() error {
 
 	_, err = file.Write(json)
 	_, err2 := file.Write([]byte("\n"))
+
 	if err != nil || err2 != nil {
 		return err
 	}
